@@ -1,6 +1,6 @@
 # Auto zoom lone images and videos
 
-A Firefox extension that adds pan and zoom controls to standalone image documents and makes standalone videos loop. It is a self-contained WebExtension: the former `panzoom` dependency is implemented in `content.js`, and the extension loads no remote code or CDN assets.
+A Firefox extension that adds pan and zoom controls to standalone image documents and makes standalone videos loop. It is a self-contained WebExtension and loads no remote code or CDN assets.
 
 ## Load in Firefox
 
