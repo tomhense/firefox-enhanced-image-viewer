@@ -13,7 +13,7 @@ Temporary add-ons are removed when Firefox restarts. For regular installation, p
 ## Image controls
 
 - Drag to pan; use the mouse wheel or a touch pinch to zoom.
-- Press **Space** to return to fit, or **F** to fill the viewport.
+- Press **Space** to return to the image's initial fit, or **F** to enlarge it as much as possible while keeping the whole image visible.
 - Press **Q** to toggle the image dimensions.
 - Click the middle mouse button to return to fit.
 

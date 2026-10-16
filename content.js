@@ -151,13 +151,12 @@
 			render();
 		}
 
-		function zoomToFill() {
+		function zoomToContain() {
 			// Re-read the viewport in case the shortcut is pressed before the
 			// browser has delivered a pending resize event.
 			resizeBase();
-			zoom = Math.max(minZoom, viewer.clientWidth / baseWidth, viewer.clientHeight / baseHeight);
-			// Tiny source images can need more than 10x to reach the viewport.
-			// Raise the wheel-zoom ceiling too, so it won't snap back after filling.
+			zoom = Math.min(viewer.clientWidth / baseWidth, viewer.clientHeight / baseHeight);
+			// Tiny source images can need more than 10x to use the available space.
 			maxZoom = Math.max(defaultMaxZoom, zoom * 10);
 			x = 0;
 			y = 0;
@@ -184,7 +183,7 @@
 		document.addEventListener("keydown", (event) => {
 			if (event.code === "KeyF") {
 				event.preventDefault();
-				zoomToFill();
+				zoomToContain();
 			} else if (event.code === "Space") {
 				event.preventDefault();
 				zoomToFit();
