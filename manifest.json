@@ -1,0 +1,22 @@
+{
+	"manifest_version": 3,
+	"name": "Auto zoom lone images and videos",
+	"version": "1.0.0",
+	"description": "Pan and zoom standalone images in Firefox, and loop standalone videos.",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "auto-zoom-lone-images@example.com",
+			"strict_min_version": "109.0"
+		}
+	},
+	"host_permissions": [
+		"*://*/*"
+	],
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"js": ["content.js"],
+			"run_at": "document_idle"
+		}
+	]
+}
