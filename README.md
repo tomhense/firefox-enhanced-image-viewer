@@ -18,3 +18,5 @@ Temporary add-ons are removed when Firefox restarts. For regular installation, p
 - Click the middle mouse button to return to fit.
 
 The extension only changes a page when it is a standalone image or video document. It needs access to HTTP and HTTPS pages so it can recognize images regardless of their file extension or URL query string.
+
+The extension does not collect, store, or transmit any user data.
