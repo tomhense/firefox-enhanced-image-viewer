@@ -8,10 +8,7 @@
 	const bodyChildren = [...document.body.children];
 	const image = document.querySelector("img");
 	const video = document.querySelector("video");
-	const isImageDocument = Boolean(
-		document.querySelector('head link[href="resource://content-accessible/TopLevelImageDocument.css"]') ||
-		(bodyChildren.length === 1 && bodyChildren[0] === image)
-	);
+	const isImageDocument = document.toString() === "[object ImageDocument]";
 	const isVideoDocument = Boolean(
 		document.querySelector('head link[href="resource://content-accessible/TopLevelVideoDocument.css"]') ||
 		(bodyChildren.length === 1 && bodyChildren[0] === video)
